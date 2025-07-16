@@ -261,3 +261,63 @@ footer {
   font-size: var(--small-font);
   padding: 1em;
 }
+
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  justify-items: center;   
+  align-items: center;
+}
+
+
+.categories-grid img {
+  width: 80px;   
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+
+.categories-grid h3 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: var(--font-base);
+  color: var(--dark-grey);
+}
+
+.newsletter {
+  background-color: var(--light-grey);
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.newsletter h2 {
+  font-size: var(--large-font);
+  margin-bottom: 1rem;
+}
+
+.newsletter-form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 0.5rem;
+  font-size: var(--font-base);
+  border: 1px solid var(--dark-grey);
+  border-radius: 4px;
+}
+
+
+.form-feedback {
+  width: 100%;
+  margin-top: 0.5rem;
+  color: var(--tertiary-color);
+}
