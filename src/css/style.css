@@ -321,3 +321,40 @@ footer {
   margin-top: 0.5rem;
   color: var(--tertiary-color);
 }
+
+.cart {
+  position: relative;
+}
+.cart-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  display: none;               
+  min-width: 1.2em;
+  height: 1.2em;
+  padding: 0 0.3em;
+  background: var(--tertiary-color);
+  color: white;
+  font-size: var(--small-font);
+  font-weight: bold;
+  line-height: 1.2;
+  border-radius: 999px;
+  text-align: center;
+}
+
+.cart-badge.show {
+  display: inline-block;
+}
+
+@keyframes shake {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-3px, 0); }
+  50%  { transform: translate(3px, 0); }
+  75%  { transform: translate(-3px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.cart.shake {
+  animation: shake 0.3s ease-in-out;
+}
