@@ -269,6 +269,14 @@ button {
   transition: opacity 0.3s ease;
 }
 
+.cart-footer a {
+  text-decoration: none;
+}
+
+.cart-footer a::after {
+  text-decoration: none;
+}
+
 .unhide {
   display: block;
 }
